@@ -1,0 +1,271 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hello", "Good day","Hey"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "Noanswers",
+        "patterns": [],
+        "responses": ["Please give more information"],
+        "context": [""]
+        },
+        {"tag": "Issue",
+        "patterns": ["How can I raise an issue","I want to raise an issue","How to raise issue"],
+        "responses": ["To raise an issue, please email support@squirro.com"],
+        "context": [""]
+        },
+        {"tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "Search",
+         "patterns": ["How do I search?", "How to Search for firms", "How do I search for documents" ],
+         "responses": ["Searching for documents is available via the home page in the main search bar "],
+         "context": [""]
+        },
+        {"tag": "Documents_Firm",
+         "patterns": ["How do I find all documents related to my firm","How to see documents related to firms","How to search for firm's documents" ],
+         "responses": ["Type in the firm's name in the search bar and the next page will display all relevant results."],
+         "context": [""]
+        },
+        {"tag": "Following",
+         "patterns": ["What is following?", "What does following mean"],
+         "responses": ["Following allows you to quickly perform searches on firms you are interested in"],
+         "context": [""]
+        },
+        {"tag": "Following_Firms",
+        "patterns": ["How do I follow my firms?","How can I folllow firms I'm interrested in", "How do I follow a bank", "How do I follow HSBC"],
+        "responses": ["A list of firms can be found in the 'Firms' dashboard and the most related firm will appear in the main dashboards after searching for a particular term. This dashboard can be accessed by navigating to 'Firms' dashboard or by clicking on the settings icon in the main dashboard"],
+        "context": [""]
+        },
+        {"tag": "Query_syntax",
+        "patterns": ["Where can I find the query syntax","Where can I access the query syntax", "Can I get the query syntax", "Want to find list of quey syntax"],
+        "responses": ["Full list of query syntax can be accessed from https://squirro.atlassian.net/wiki/spaces/DOC/pages/2949295/Query+Syntax"],
+        "context": [""]
+        },
+        {"tag": "Communities",
+        "patterns": ["What is My Communities"," What does Communities mean"],
+        "responses": ["My Communities presents all firms or groups of firms you have chosen to follow"],
+        "context": [""]
+        },
+        {"tag": "Aliases",
+        "patterns": ["Does Squirro allow us to search on aliases","Can I search using aliases", "Does Squirro accept aliases"],
+        "responses": ["Yes! If you cannot find your firm's alias please contact xxx in Technology"],
+        "context": [""]
+        },
+        {"tag": "Recent_Searches",
+        "patterns": ["How do I view my recent searches","How can I see my recent searches", "Where can I find my recnt searches"],
+        "responses": ["Click on View Latest Items in the landing page"],
+        "context": [""]
+        },
+        {"tag": "Saved_Search",
+        "patterns": ["How do I save my search?","How can I save my searches", "I want to save my searches"],
+        "responses": ["Searches can be saved by clicking on the heart icon near the main search bar"],
+        "context": [""]
+        },
+        {"tag": "Capital_data",
+        "patterns": ["Where can I find structured Capital data on my firm?","Where can I find structured Liquidity data on my firm?"],
+        "responses": ["Please see BSM or the SII systems, depending whether your firm is a Bank or an Insurer."],
+        "context": [""]
+        },
+        {"tag": "Timeline",
+        "patterns": ["What does the timeline show","What is shown on the timeline"],
+        "responses": ["The timeline displays the number of documents on each date for the search terms you have entered"],
+        "context": [""]
+        },
+        {"tag": "Timeline_Zoom",
+        "patterns": ["How do I zoom in on the timeline"],
+        "responses": ["Click on the timeline icon next to the gearwheel in the top right corner above the timeline graph"],
+        "context": [""]
+        },
+        {"tag": "Secure",
+        "patterns": ["Is it secure?","Is Squirro secure","Is Squirro protected"],
+        "responses": ["Yes. Squirro uses your email rights and documents rights"],
+        "context": [""]
+        },
+        {"tag": "Permission",
+        "patterns": ["Can I see documents I do not have permission to?","I dont have access to a document","I can't view a document", "Why cant I open a document"],
+        "responses": ["FileSite security is applied, you can only view files you have permission to"],
+        "context": [""]
+        },
+        {"tag": "Latest_items",
+        "patterns": ["What is latest items?", "What does latest items mean", "What does latest items show"],
+        "responses": ["These are the most recent documents that have been uploaded to Squirro"],
+        "context": [""]
+        },
+        {"tag": "Date",
+        "patterns": ["I want to look by date","How do I select documents by date", "Can I filter by date"],
+        "responses": ["You can use the time view on the top right of the results page. Just move the cursor to select a specific time"],
+        "context": [""]
+        },
+        {"tag": "Remove_timeline",
+        "patterns": ["How do I remove the timeline","How do I get rid of the timeline","How do I hide the timeline","How do I view timeline"],
+        "responses": ["Click on the timeline icon next to the gearwheel in the top right corner"],
+        "context": [""]
+        },
+        {"tag": "Date_documents",
+        "patterns": ["Is the date taken from the document?", "Where is the date taken from","Does the document date come from FileSite", "Where is the document date taken from"],
+        "responses": ["The date comes from when the file was uploaded to FileSite"],
+        "context": [""]
+        },
+        {"tag": "Filesite_folders",
+        "patterns": ["Why can't I search using FileSite folders?","How can I find file by folders?","Can I use folders to find documents"],
+        "responses": ["Imagine when you search on Google, you don't use folders. You just type. This is the same approach."],
+        "context": [""]
+        },
+        {"tag": "Significant_terms",
+        "patterns": ["What does significant terms show","What does significant terms mean","How can I view significant terms of a particular query ?",
+        "Where can I find the significant terms"],
+        "responses": ["Significant terms shows most frequently mentioned terms in the body of documents related to your search. Significant terms are defined in the wordcloud within the main search dashboard."],
+        "context": [""]
+        },
+        {"tag": "Size_Significant_terms",
+        "patterns": ["What does the size of each significant term mean?"," Does the size of the significant terms have meaning "],
+        "responses": ["The size of each term shows the relative weight (frequency and significance) of the term in the body of documents. Larger sized terms demonstrate high frequency / significance and smaller ones - lesser."],
+        "context": [""]
+        },
+        {"tag": "Open_Document",
+        "patterns": ["How can I open documents?","I want to open documents","What does view in Filesite do",
+                "How do I download files", "Can I download files"],
+        "responses": ["Documents can be opened in their native format by clicking on the document title or the 'View in Filesite' button"],
+        "context": [""]
+        },
+        {"tag": "Advanced_Search",
+        "patterns": ["I want to do a more advanced search", "I want to do a deeper advanced search", "I can't find what I'm looking for",
+                "None of the results seem helpful","None of the results answer my question","The results are not useful"],
+        "responses": ["Advanced Search functionality is available by clicking on the magnifying glass with the plus sign"],
+        "context": [""]
+        },
+        {"tag": "Filter",
+        "patterns": ["How do I apply filters ", "How do I apply filters by date ", "How do I apply filters by Word Document",
+                "How do I filter by email", "How do I filter","How do I use filters", "Can I filter by email", "Can I filter by word document",
+               "I just want Excel documents","I just want PowerPoint documents","I just want Word documents","I just want PDF documents"],
+        "responses": ["Select Filter options found on the left side window and select document type "],
+        "context": [""]
+        },
+        {"tag": "Extracting_tables",
+        "patterns": ["How can I extract tables from PDF documents"],
+        "responses": ["This can be achieved by selecting the table extraction button in the item view and then dragging over the area which contains the table"],
+        "context": [""]
+        },
+        {"tag": "PDF_tables",
+        "patterns": ["What can I extract from tables in PDF?"],
+        "responses": ["You can extract the row and column names, as well as any datapoints present in an easy way requiring no formatting on your part"],
+        "context": [""]
+        },
+        {"tag": "Several_tables",
+        "patterns": ["I would like to extract several tables from different PDFs?"],
+        "responses": ["You can easily extract all tables in the population of documents and save them to the same Excel file for easy comparison."],
+        "context": [""]
+        },
+        {"tag": "Export",
+        "patterns": ["How do I export?"],
+        "responses": ["Just click on the top right and a little menu pops up. Select export to Excel"],
+        "context": [""]
+        },
+        {"tag": "Save",
+        "patterns": ["Can I save my searches?","Can I save my favourite documents"],
+        "responses": ["Yes just click the heart"],
+        "context": [""]
+        },
+        {"tag": "Squirro",
+        "patterns": ["Why is it called Squirro?"],
+        "responses": ["The name of the FinTech is Squirro. We quite like!"],
+        "context": [""]
+        },
+        {"tag": "Widget",
+        "patterns": ["What is a widget"],
+        "responses": ["It is a little application within Squirro that we think is helpful to the PRA"],
+        "context": [""]
+        },
+        {"tag": "Index",
+        "patterns": ["Why cannot I not find documents before 2019?"],
+        "responses": ["It is a little application within Squirro that we think is helpful to the PRA"],
+        "context": [""]
+        },
+        {"tag": "Wrong_permission",
+        "patterns": ["I've found a document that I think has the wrong permission"],
+        "responses": ["Oh dear. Squirro just uses the FileSite permissions so perhaps they were not ideal. Why not talk to the author and get them changed?"],
+        "context": [""]
+        },
+        {"tag": "Sort",
+        "patterns": ["How to sort search query by Date ","How to sort search query by Relevance", "How to sort search query by Smart Rank"],
+        "responses": ["Squirro search results can be sorted by Date, Relevance or Smart Rank in the Advanced Options."],
+        "context": [""]
+        },
+        {"tag": "Smart_Rank",
+        "patterns": ["What is Smart Rank","What does Smart Rank mean","Smart Rank definition", "Define Smart Rank", "What is Smart Rank"],
+        "responses": ["Smart Rank uses the combination of time and relevance to sort documents, therefore the most recent and most relevant documents appear first in the result list. "],
+        "context": [""]
+        },
+        {"tag": "Remove_filters",
+        "patterns": ["How do I clear a filter?","How do I remove the filters"],
+        "responses": ["Filters can be cleared by selecting the button, \"Clear Filters\" or by navigating to the filter Icon in the bottom right hand corner"],
+        "context": [""]
+        },
+        {"tag": "Unfollow_firms",
+        "patterns": ["How can I unfollow firms?","I want to unfollow a firm","I want to stop following a firm","I want to stop following a firm"],
+        "responses": ["Firms can be unfollowed by clicking on the \"Unfollow\" button from the Firms dashboards."],
+        "context": [""]
+        },
+        {"tag": "Data_Problem",
+        "patterns": ["Who should I ask if I have a data problem?"],
+        "responses": ["The PRA COO One Front Door is a good place to start for advice."],
+        "context": [""]
+        }, 
+        {"tag": "Film",
+        "patterns": ["What is your favourite film?"],
+        "responses": ["I, Robot."],
+        "context": [""]
+        },
+        {"tag": "specific_terms",
+        "patterns": ["How do I do specific terms?"],
+        "responses": ["Just like google, you can use quotes around the text"],
+        "context": [""]
+        },
+        {"tag": "Smart_filter",
+        "patterns": ["What is a smart filter?", "Define smart filter","What does smart filter mean","Smart filter definition"],
+        "responses": ["Smart filters are intelligent, context-sensitive filters that following a little 'training' on a set of documents, can be used to identify most relevant and related information quickly"],
+        "context": [""]
+        },
+        {"tag": "Create_Smart_filters",
+        "patterns": ["How do I create a smart filter?", "How do I make a smart filter", "How can I make a smart filter"],
+        "responses": ["Please refer to this tutorial for a detailed step by step explanation. https://squirro.atlassian.net/wiki/spaces/DOC/pages/69009498/Smart+Filter+Tutorial#SmartFilterTutorial-CreateEmptySmartFilter"],
+        "context": [""]
+        },
+        {"tag": "Improve_search",
+        "patterns": ["How can I improve my search results?","How do I improve my search results", "How to improve my search", "I want to improve my search results"],
+        "responses": ["Have you tried using search operators or advanced search?"],
+        "context": ["Search_operators"]
+        },
+        {"tag": "Search_operators",        
+        "patterns": ["What are search operators?","Define search opeators","What does search operators mean","Explain what are search operators"],
+        "responses": ["Just like in Google, search operators are logical connectors that instruct the search query to perform a particular function. The most common search operators are: Inclusion, Disjunction, Exclusion, Concatenation, Wildcard, Facet, and Near Search. See the link for definitions https://squirro.atlassian.net/wiki/spaces/DOC/pages/12156963/Basic+searching"],
+        "context": [""]
+        },
+        {"tag": "Autocomplete",        
+        "patterns": ["What is autocomplete?" ],
+        "responses": ["This helps the tool and you learn. It is also handy so you don't have to retype things"],
+        "context": ["Search_operators"]
+        },
+        {"tag": "Learn",        
+        "patterns": ["How does it learn?", "How does Squirro learn" ],
+        "responses": ["Just like google, with every search and interaction Squirro is learning. This helps us get better results"],
+        "context": ["Search_operators"]
+        },
+        {"tag": "Learn_Search",        
+        "patterns": ["Will it learn my searches?", "Will Squirro learn my searches?" ],
+        "responses": ["Just like google, it will learn what people are searching for and develop its artificial intelligence. If you like your search why not save it?"],
+        "context": ["Search_operators"]
+        },
+        {"tag": "Signal",        
+        "patterns": ["What are signals", "What does signals mean", "What does signal in the filter options mean" ],
+        "responses": ["Proximity filters that are a form of recommendation i.e Interest rate - Negative: Show documents that relate to negative interest rate."],
+        "context": ["Search_operators"]
+        },
+        {"tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        }         
+   ]
+}
